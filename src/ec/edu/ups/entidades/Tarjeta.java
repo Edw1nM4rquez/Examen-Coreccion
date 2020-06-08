@@ -20,6 +20,103 @@ public class Tarjeta implements Serializable{
 	@OneToOne(cascade = CascadeType.ALL, mappedBy ="tarjeta")
 	private Pedido pedido;
 	
+	public Tarjeta() {
+		
+	}
+
+
+	
+	//Es solo para la tarjeta de credito 
+	
+	public Tarjeta(int numeroTarjeta, String nombre, String fecha_caducidad, int cvv) {
+		super();
+		this.numeroTarjeta = numeroTarjeta;
+		this.nombre = nombre;
+		this.fecha_caducidad = fecha_caducidad;
+		this.cvv = cvv;
+	}	
+	//Es para la tarjeta de credito con el pedido 
+
+
+
+	public Tarjeta(int numeroTarjeta, String nombre, String fecha_caducidad, int cvv, Pedido pedido) {
+		super();
+		this.numeroTarjeta = numeroTarjeta;
+		this.nombre = nombre;
+		this.fecha_caducidad = fecha_caducidad;
+		this.cvv = cvv;
+		this.pedido = pedido;
+	}
+
+
+
+	public int getNumeroTarjeta() {
+		return numeroTarjeta;
+	}
+
+
+
+	public void setNumeroTarjeta(int numeroTarjeta) {
+		this.numeroTarjeta = numeroTarjeta;
+	}
+
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+
+	public String getFecha_caducidad() {
+		return fecha_caducidad;
+	}
+
+
+
+	public void setFecha_caducidad(String fecha_caducidad) {
+		this.fecha_caducidad = fecha_caducidad;
+	}
+
+
+
+	public int getCvv() {
+		return cvv;
+	}
+
+
+
+	public void setCvv(int cvv) {
+		this.cvv = cvv;
+	}
+
+
+
+	public Pedido getPedido() {
+		return pedido;
+	}
+
+
+
+	public void setPedido(Pedido pedido) {
+		this.pedido = pedido;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Tarjeta [numeroTarjeta=" + numeroTarjeta + ", nombre=" + nombre + ", fecha_caducidad=" + fecha_caducidad
+				+ ", cvv=" + cvv + ", pedido=" + pedido + "]";
+	}
+	
+	
 	
 	
 	
