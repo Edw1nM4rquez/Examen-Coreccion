@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ec.edu.ups.dao.DAOFactory;
+import ec.edu.ups.dao.TarjetaCreditoDAO;
+import ec.edu.ups.entidades.TarjetaCredito;
+
 /**
  * Servlet implementation class CrearTarjeta
  */
@@ -36,6 +40,7 @@ public class CrearTarjeta extends HttpServlet {
 		System.out.println(tarjetaDao.findAll());
 		url = "/Publica/crear_tarjeta.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);
+		}
 	}
 
 	/**
