@@ -2,9 +2,9 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="ExamenCoreccion" transaction-type="RESOURCE_LOCAL">
 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-	<class>ec.edu.ups.entidades.Tarjeta</class>
 	<class>ec.edu.ups.entidades.Pedido</class>
 	<class>ec.edu.ups.entidades.Comida</class>
+	<class>ec.edu.ups.entidades.TarjetaCredito</class>
 	
 	<properties>
 			 <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />		
