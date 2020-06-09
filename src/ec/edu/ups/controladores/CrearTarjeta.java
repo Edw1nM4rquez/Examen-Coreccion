@@ -32,15 +32,20 @@ public class CrearTarjeta extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 		TarjetaCreditoDAO tarjetaDao= DAOFactory.getDAOFactory().getTarjetaCreditoDAO();
-
 		String url = "";
+	//	TarjetaCredito tar= new TarjetaCredito("1234567891234", "jose alfonso", "06/20", "133");
+		
 		if(request.getParameter("tarjetas").contentEquals("all")) {
+			
 		request.setAttribute("tarjetas", tarjetaDao.findAll());	
 		System.out.println(tarjetaDao.findAll());
-		url = "/Publica/crear_tarjeta.jsp";
+		//tarjetaDao.create(tar);
+			url = "/Publica/crear_tarjeta.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 		}
+		
 	}
 
 	/**

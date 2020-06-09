@@ -37,17 +37,17 @@
                             id="navbarSupportedContent">
                             <ul class="navbar-nav align-items-center">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="/PedidosJPA/index.jsp">Inicio</a>
+                                    <a class="nav-link" href="/ExamenCoreccion/index.jsp">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/PedidosJPA/CrearTarjeta?tarjetas=all">Crear/Listar Tarjeta Credito</a>
+                                    <a class="nav-link" href="/ExamenCoreccion/CrearTarjeta?tarjetas=all">Crear/Listar Tarjeta Credito</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/PedidosJPA/ListarPedidos?pedidos=all">Buscar/Listar Pedidos</a>
+                                    <a class="nav-link" href="/ExamenCoreccion/ListarPedidos?pedidos=all">Buscar/Listar Pedidos</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/PedidosJPA/Publica/crear_pedido.jsp">Crear Pedido</a>
+                                    <a class="nav-link" href="/ExamenCoreccion/Publica/crear_pedido.jsp">Crear Pedido</a>
                                 </li>
                
                             </ul>

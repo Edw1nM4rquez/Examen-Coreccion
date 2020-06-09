@@ -15,7 +15,7 @@ public class JPAPedidoDAO extends JPAGenericDAO<Pedido, Integer> implements Pedi
 	protected EntityManager em;
 	public JPAPedidoDAO() {
 		super(Pedido.class);
-		this.em = Persistence.createEntityManagerFactory("PedidosJPA").createEntityManager();
+		this.em = Persistence.createEntityManagerFactory("ExamenCoreccion").createEntityManager();
 		
 	}
 	
